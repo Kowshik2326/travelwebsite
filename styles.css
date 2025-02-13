@@ -1,0 +1,337 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fffdfd; /* Light gray background */
+    color: #333; /* Dark gray text */
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f39c12; /* Golden color */
+    color: rgb(15, 7, 7);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e67e22; /* Darker golden color */
+  }
+  
+  /* Navigation styles */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50; /* Dark blue background */
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .nav__logo a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav__links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav__links a {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav__links a:hover {
+    color: #ff9d00; /* Golden hover effect */
+  }
+  
+  /* Full-Screen Header Section */
+  header {
+    margin-top: 80px; /* Adjusted for fixed navbar */
+    text-align: center;
+    background: url('images/travel-hd-axhrsecphqby11wk.jpg') no-repeat center center/cover;
+    background-size: cover;
+    height: 100vh; /* Full screen */
+    color: rgb(255, 255, 255);
+    padding: 80px 20px;
+  }
+  
+  header h1 {
+    font-size: 48px;
+  }
+  
+  header p {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  
+  header button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #f39c12; /* Golden color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  header button:hover {
+    background-color: #e67e22; /* Darker golden on hover */
+  }
+  
+  /* Full-Screen Journey Section */
+  .journey__container {
+    background: url('images/Travel-Concepts-on-the-desktop-HD-picture.jpg') no-repeat center center/cover;
+    height: 100vh; /* Full screen */
+    padding: 0; /* Removed extra padding */
+  }
+  
+  .journey__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: center;
+    height: 100%; /* Ensures content is vertically centered */
+  }
+  
+  .country__card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .country__name {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: rgb(12, 10, 10);
+  }
+  
+  .country__name i {
+    margin-right: 5px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .section__subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Full-Screen Banner Section */
+  .banner__container {
+    background: url('images/travel 2.jpg') no-repeat center center/cover;
+    height: 100vh; /* Full screen */
+    padding: 80px 20px;
+    color: white;
+  }
+  
+  .banner__content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .banner__content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Display Section */
+  .display__container {
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .display__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .display__card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Service Images in Display Section */
+  .service__image {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    border-radius: 8px;
+    margin-bottom: 15px; /* Adds spacing between the image and text */
+  }
+  
+  .display__card h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .display__card p {
+    color: #666;
+  }
+  
+  /* Full-Screen Sign In, Sign Up, and Contact Sections */
+  #signin, #signup, #contact {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+  }
+  
+  #signin button,
+  #signup button,
+  #contact button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+  }
+  
+  #signin h2, #signup h2, #contact h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  #signin p, #signup p, #contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  #contact {
+    background: url('images/travel 4.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 60px 20px;
+    height: 100vh; /* Full screen */
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #2c3e50; /* Dark blue */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  footer h4 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  footer .social__icons {
+    margin-bottom: 20px;
+  }
+  
+  footer .social__icons span {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  footer .social__icons span:hover {
+    color: #f39c12; /* Golden hover effect */
+  }
+  
+  footer p {
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  /* Mobile responsiveness */
+  @media screen and (max-width: 768px) {
+    .nav__links {
+      display: none; /* Hide links by default */
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #2c3e50; /* Dark blue background */
+      padding: 20px;
+      width: 200px;
+    }
+  
+    .nav__links a {
+      color: white;
+      font-size: 18px;
+    }
+  
+    /* Burger menu styles for mobile */
+    .nav__logo {
+      flex: 1;
+    }
+  
+    .nav__logo a {
+      font-size: 22px;
+    }
+  
+    .nav__menu-icon {
+      display: block;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  
+    .nav__links.open {
+      display: flex; /* Show the menu when opened */
+    }
+  
+    header h1 {
+      font-size: 36px;
+    }
+  
+    header p {
+      font-size: 16px;
+    }
+  
+    section {
+      padding: 30px 15px;
+    }
+  
+    .display__grid {
+      grid-template-columns: 1fr; /* Stack the items in one column */
+    }
+  
+    .display__card {
+      margin-bottom: 20px;
+    }
+  
+    footer h4 {
+      font-size: 24px;
+    }
+  
+    footer p {
+      font-size: 14px;
+    }
+  }
+  
